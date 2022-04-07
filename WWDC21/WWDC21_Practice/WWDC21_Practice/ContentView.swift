@@ -47,6 +47,34 @@ struct ContentView: View {
         }.task {
             do {
                 
+                var dummy = 1
+                dummy += 1
+                // Task
+                let messageTask = Task { () -> [SampleMessage] in
+                    // Mutation of captured var 'dummy' in concurrently-executing code
+                    // dummy += 1
+                    return try await fetchMessage()
+                }
+                
+                let sentTask = Task { () -> [SampleMessage] in
+                    return try await fetchSent()
+                }
+                
+                messages = try await messageTask.value
+               
+                // Result로 넘길 수도 있음
+                let result = await sentTask.result
+                sent = try result.get()
+                
+                // 각자 병렬적으로 돌아감
+                Task {
+                    print(Task.currentPriority)
+                }
+                
+                Task {
+                    
+                }
+
                 // async, await
                 // messages = try await fetchMessage()
                 // sent = try await fetchSent()
@@ -59,7 +87,6 @@ struct ContentView: View {
                 messages = try await asyncMessage
                 sent = try await asyncSent
                 
-                // 기존방식 36분 56초부터 보기
                 fetchMessageNonAsync { result in
                     if case .success(let message) = result {
                         print(message)
@@ -133,3 +160,4 @@ struct ContentView_Previews: PreviewProvider {
 // sync는 현재 쓰레드 내 작업을 멈추고 다른 작업을 시작할 수 없음.
 // body는 async가 아님, task 함수를 사용해야 함. 남발은 하지말아야 함(Context Switch 참고)
 // let은 var와 달리 concurrency-safe함
+// 멀티코어 활용을 위해서는 async let을 활용

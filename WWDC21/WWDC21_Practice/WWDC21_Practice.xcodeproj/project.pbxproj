@@ -13,6 +13,7 @@
 		45E25A7D27F7FD5C00433C3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E25A7C27F7FD5C00433C3A /* Preview Assets.xcassets */; };
 		45E25A8427F8149D00433C3A /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E25A8327F8149D00433C3A /* Petition.swift */; };
 		45FAB7EB27F8638300FAC2CF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FAB7EA27F8638300FAC2CF /* Extension.swift */; };
+		45FAB7F127FF011600FAC2CF /* Task_practice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FAB7F027FF011600FAC2CF /* Task_practice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		45E25A7C27F7FD5C00433C3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45E25A8327F8149D00433C3A /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
 		45FAB7EA27F8638300FAC2CF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		45FAB7F027FF011600FAC2CF /* Task_practice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task_practice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				45E25A7527F7FD5A00433C3A /* WWDC21_PracticeApp.swift */,
 				45E25A7727F7FD5A00433C3A /* ContentView.swift */,
 				45E25A8327F8149D00433C3A /* Petition.swift */,
+				45FAB7F027FF011600FAC2CF /* Task_practice.swift */,
 				45E25A7927F7FD5C00433C3A /* Assets.xcassets */,
 				45E25A7B27F7FD5C00433C3A /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FAB7F127FF011600FAC2CF /* Task_practice.swift in Sources */,
 				45E25A7827F7FD5A00433C3A /* ContentView.swift in Sources */,
 				45E25A7627F7FD5A00433C3A /* WWDC21_PracticeApp.swift in Sources */,
 				45E25A8427F8149D00433C3A /* Petition.swift in Sources */,

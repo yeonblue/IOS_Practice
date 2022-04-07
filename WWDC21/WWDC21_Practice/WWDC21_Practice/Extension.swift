@@ -27,3 +27,11 @@ extension URLSession {
     }
 }
 
+extension Task where Success == Never, Failure == Never {
+    static func nanoSecondSleep(seconds: Double) async throws {
+        
+        // try await Task.sleep(nanoseconds: 1_000_000_000) 동일
+        let duration = UInt64(seconds * 1_000_000_000)
+        try await sleep(nanoseconds: duration)
+    }
+}
