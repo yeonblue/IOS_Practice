@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4546D6042802FD9B00C634C7 /* Task_practice2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4546D6032802FD9B00C634C7 /* Task_practice2.swift */; };
 		45E25A7627F7FD5A00433C3A /* WWDC21_PracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E25A7527F7FD5A00433C3A /* WWDC21_PracticeApp.swift */; };
 		45E25A7827F7FD5A00433C3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E25A7727F7FD5A00433C3A /* ContentView.swift */; };
 		45E25A7A27F7FD5C00433C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E25A7927F7FD5C00433C3A /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4546D6032802FD9B00C634C7 /* Task_practice2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task_practice2.swift; sourceTree = "<group>"; };
 		45E25A7227F7FD5A00433C3A /* WWDC21_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC21_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E25A7527F7FD5A00433C3A /* WWDC21_PracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC21_PracticeApp.swift; sourceTree = "<group>"; };
 		45E25A7727F7FD5A00433C3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				45E25A7727F7FD5A00433C3A /* ContentView.swift */,
 				45E25A8327F8149D00433C3A /* Petition.swift */,
 				45FAB7F027FF011600FAC2CF /* Task_practice.swift */,
+				4546D6032802FD9B00C634C7 /* Task_practice2.swift */,
 				45E25A7927F7FD5C00433C3A /* Assets.xcassets */,
 				45E25A7B27F7FD5C00433C3A /* Preview Content */,
 			);
@@ -148,6 +151,7 @@
 			files = (
 				45FAB7F127FF011600FAC2CF /* Task_practice.swift in Sources */,
 				45E25A7827F7FD5A00433C3A /* ContentView.swift in Sources */,
+				4546D6042802FD9B00C634C7 /* Task_practice2.swift in Sources */,
 				45E25A7627F7FD5A00433C3A /* WWDC21_PracticeApp.swift in Sources */,
 				45E25A8427F8149D00433C3A /* Petition.swift in Sources */,
 				45FAB7EB27F8638300FAC2CF /* Extension.swift in Sources */,
